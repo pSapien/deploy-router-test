@@ -1,12 +1,7 @@
-import {
-  BrowserRouter,
-  HashRouter,
-  Link,
-  Routes,
-  Route,
-} from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
+import { Home, Login } from "components";
 
-function App() {
+export default function App() {
   return (
     <HashRouter>
       <Routes>
@@ -16,13 +11,3 @@ function App() {
     </HashRouter>
   );
 }
-
-function Login() {
-  return <Link to="/home">Go back to home</Link>;
-}
-
-function Home() {
-  return <Link to="/login">Go back to Login</Link>;
-}
-
-export default App;
